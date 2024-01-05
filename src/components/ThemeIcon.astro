@@ -17,26 +17,6 @@
     </svg>
 </button>
 
-<style>
-    #themeToggle {
-        border: 0;
-        background: none;
-    }
-    .sun {
-        fill: black;
-    }
-    .moon {
-        fill: transparent;
-    }
-
-    :global(.dark) .sun {
-        fill: transparent;
-    }
-    :global(.dark) .moon {
-        fill: white;
-    }
-</style>
-
 <script>
     document.addEventListener("astro:page-load", () => {
         const theme = (() => {
