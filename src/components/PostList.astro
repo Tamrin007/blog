@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import { getCollection } from "astro:content";
+import BlogPost from "./BlogPost.astro";
+
+const { tagName, numberOfPosts } = Astro.props;
+const posts = await getCollection("posts");
+const postsFilteredByTagName = posts
+  .filter((post) => !tagName || post.data.tags.includes(tagName))
+  .sort(
+    (a, b) =>
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+  )
+  .slice(0, numberOfPosts);
+---
+
+{
+  postsFilteredByTagName.map((post) => (
+    <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+  ))
+}

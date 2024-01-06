@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostList from "../components/PostList.astro";
+
 const pageTitle = "たむらぼ";
 ---
 
@@ -12,6 +14,12 @@ const pageTitle = "たむらぼ";
     </p>
     <p>最近は組織 (チーム) 作りに勤しんでいます。</p>
   </section>
-  <h2>Featured Posts</h2>
-  <h2>Recent Posts</h2>
+  <section>
+    <h2>Featured Posts</h2>
+    <PostList tagName="featured" numberOfPosts="3" />
+  </section>
+  <section>
+    <h2>Recent Posts</h2>
+    <PostList numberOfPosts="3" />
+  </section>
 </BaseLayout>
