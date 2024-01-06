@@ -8,13 +8,13 @@ const pageTitle = "タグインデックス";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <div class="tags">
-        {
-            tags.map((tag) => (
-                <p class="tag">
-                    <a href={`/tags/${tag}`}>{tag}</a>
-                </p>
-            ))
-        }
-    </div>
+  <div class="tags">
+    {
+      tags.map((tag) => (
+        <p class="tag">
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </p>
+      ))
+    }
+  </div>
 </BaseLayout>
