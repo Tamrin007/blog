@@ -6,7 +6,7 @@ author: "Astro学習者"
 image:
   url: "https://docs.astro.build/assets/full-logo-light.png"
   alt: "Astroのロゴ。"
-tags: ["astro", "ブログ", "公開学習"]
+tags: ["astro", "ブログ", "公開学習", "featured"]
 ---
 
 Astroの学習についての私の _新しいブログ_ へようこそ！ここでは、新しいウェブサイトを作りながら、私の学習過程を共有します。
