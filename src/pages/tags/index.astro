@@ -4,7 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const allPosts = await getCollection("posts");
 const tags = [...new Set(allPosts.flatMap((post) => post.data.tags).flat())];
-const pageTitle = "タグインデックス";
+const pageTitle = "Tags";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
