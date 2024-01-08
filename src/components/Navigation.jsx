@@ -10,6 +10,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { Logo } from "./Logo.jsx";
+import { Sun } from "lucide-react";
 
 export default function Navigation() {
   return (
@@ -48,7 +49,9 @@ export default function Navigation() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button isIconOnly>☀</Button>
+          <Button isIconOnly>
+            <Sun />
+          </Button>
         </NavbarItem>
       </NavbarContent>
 
