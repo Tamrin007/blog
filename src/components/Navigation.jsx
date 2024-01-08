@@ -12,7 +12,7 @@ import {
 import { Logo } from "./Logo.jsx";
 import { Sun } from "lucide-react";
 
-export default function Navigation() {
+export function Navigation() {
   return (
     <Navbar>
       <NavbarContent className="sm:hidden" justify="start">
