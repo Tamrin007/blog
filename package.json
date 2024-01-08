@@ -10,9 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@nextui-org/react": "^2.2.9",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.0.8",
-    "preact": "^10.19.3"
+    "framer-motion": "^10.17.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "prettier": "^3.1.1",
