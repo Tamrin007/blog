@@ -7,10 +7,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import { Logo } from "./Logo.jsx";
-import { Sun } from "lucide-react";
+import { ModeToggle } from "./ModeToggle.jsx";
 
 export function Navigation() {
   return (
@@ -49,9 +48,7 @@ export function Navigation() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button isIconOnly>
-            <Sun />
-          </Button>
+          <ModeToggle />
         </NavbarItem>
       </NavbarContent>
 
